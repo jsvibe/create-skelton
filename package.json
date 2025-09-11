@@ -1,0 +1,44 @@
+{
+  "name": "create-skelton",
+  "version": "3.0.1",
+  "description": "A simple project and library skeleton generator with NPX",
+  "main": "bin/skelton.js",
+  "bin": {
+    "create-skelton": "bin/skelton.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \" No build required\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsvibe/create-skelton.git"
+  },
+  "keywords": [
+    "create-skelton",
+    "skeleton",
+    "cli-skelton",
+    "project",
+    "library",
+    "generator",
+    "scaffold",
+    "javascript",
+    "jsvibe"
+  ],
+  "files": [
+    "bin/",
+    "template/",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "Indian Modassir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsvibe/create-skelton/issues"
+  },
+  "homepage": "https://github.com/jsvibe/create-skelton#readme",
+  "dependencies": {
+    "fsmate": "^2.4.1",
+    "printfy": "^2.0.5"
+  }
+}
