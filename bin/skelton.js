@@ -66,7 +66,7 @@ function complete() {
 
   for(let file of files) {
     const basename = path.basename(file);
-    const fileDepth = fileDepth;
+    const fileDepth = basename;
 
     if (fs.isFileSync(file)) {
       fs.copySync(file, fileDepth);
