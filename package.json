@@ -1,6 +1,6 @@
 {
   "name": "create-skelton",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A simple project and library skeleton generator with NPX",
   "main": "bin/skelton.js",
   "bin": {

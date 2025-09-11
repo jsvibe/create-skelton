@@ -65,10 +65,13 @@ function complete() {
   let files = fs.scandirSync(templateDir, {withFullPath: true});
 
   for(let file of files) {
+    const basename = path.basename(file);
+    const fileDepth = fileDepth;
+
     if (fs.isFileSync(file)) {
-      fs.copySync(file, path.join(targetDir, path.basename(file)));
-    } else if (type === path.basename(file)) {
-      fs.mirrorSync(file, targetDir);
+      fs.copySync(file, fileDepth);
+    } else if (type === basename) {
+      fs.mirrorSync(file, basename === 'library' ? fileDepth : targetDir);
     }
   }
 
